@@ -1,3 +1,78 @@
+:root {
+  --vert:rgb(236 47 9);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-Light.ttf");
+}
 body {
-  background-color: red;
+  background-image: url("../image/3694173.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "poppins" !important;
+}
+
+.div {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.82);
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  box-shadow: 4px 4px 7px rgba(118, 118, 118, 0.05);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.div .title_project {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+.div .title_project .ka {
+  color: var(--vert);
+}
+.div .title_project .mi {
+  color: rgb(47, 255, 109);
+}
+.div .title_project .an {
+  color: orange;
+}
+.div .sign {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  font-size: 19px;
+}
+.div form {
+  display: flex;
+  flex-direction: column;
+}
+.div form input {
+  margin-top: 20px;
+  outline: none;
+}
+.div form input[type=email], .div form input[type=password] {
+  padding: 13px;
+  border: none;
+  background: rgb(250, 250, 250);
+}
+.div form input[type=submit] {
+  padding: 10px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 30px;
+  background: var(--vert);
+  color: rgb(255, 255, 255);
+  font-family: "poppins";
+  font-size: 16px;
+}
+.div .url {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.div .url a {
+  color: var(--vert);
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

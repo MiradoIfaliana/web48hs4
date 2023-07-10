@@ -23,7 +23,10 @@ class First extends CI_Controller {
 		// $connected=$this->session->userdata('connected');
 		// $connected=$this->session->set_userdata('connected',);
 	}
-
+	public function inscription()
+	{
+		$this->load->view('Inscription');
+	}	
 	public function login(){
 		$this->load->model('Login');
 		$mail=$this->input->post('mail');

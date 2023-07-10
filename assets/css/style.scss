@@ -1,3 +1,78 @@
+:root{
+    --vert:rgb(236 47 9);
+}
+@font-face {
+    font-family: "poppins";
+    src: url("../../fonts/Poppins-Light.ttf");
+}
 body{
-    background-color: red;
+    background-image: url("../image/3694173.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // background-size: ;
+    // background-clip: 100%;
+    font-family: "poppins" !important;
+}
+.div{
+    padding: 30px;
+    background-color: rgb(255 255 255 / 82%);
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    box-shadow: 4px 4px 7px rgb(118 118 118 / 5%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .title_project{
+        display: flex;
+        font-size: 25px;
+        font-weight: bold;
+        .ka{
+            color:var(--vert) ;
+        }
+        .mi{
+            color:rgb(47, 255, 109);
+        }
+        .an{
+            color: orange;
+        }
+    }
+    .sign{
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        font-size: 19px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            margin-top: 20px;
+            outline: none;
+        }
+        input[type="email"] , input[type="password"]{
+            padding: 13px;
+            border:none;
+            background: rgb(250, 250, 250);
+        }
+        input[type="submit"]{
+            padding: 10px;
+            margin-top: 30px;
+            border:none;
+            border-radius: 30px;;
+            background: var(--vert);
+            color: rgb(255, 255, 255);
+            font-family: "poppins";
+            font-size: 16px;
+        }
+    }
+    .url{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 12px;
+        a{
+            color: var(--vert);
+            text-decoration: none;
+        }
+    }
 }
