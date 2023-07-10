@@ -41,7 +41,7 @@ class First extends CI_Controller {
 			$this->load->view('Accueil');
 		}
 	}
-	public function inscription(){
+	public function addinscription(){
 		$this->load->model('Login');
 		//--donnee
 		$nom=$this->input->post('nom');
@@ -58,9 +58,5 @@ class First extends CI_Controller {
 			$data["message"]=$ex->getMessage();
 			$this->load->view('Inscription',$data);
 		}
-<<<<<<< HEAD
-//papa noel
-=======
->>>>>>> Mirado
 	}
 }
