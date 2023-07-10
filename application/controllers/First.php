@@ -19,6 +19,20 @@ class First extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('login');
-	}	
+		$this->load->view('Login');
+		// $connected=$this->session->userdata('connected');
+		// $connected=$this->session->set_userdata('connected',);
+	}
+
+	public function login(){
+		$this->load->model('Login');
+		$mail=$this->input->post('mail');
+		$password=$this->input->post('password');
+		$user=$this->Login->getUser($mail,$password);
+		if($user==null){
+			$data["message"] = "valeur";
+			$this->load->view('Login',$data);
+		}
+
+	}
 }

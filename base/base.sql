@@ -36,7 +36,7 @@ create table repas(
     nomrepas varchar(55),
     descriptions text,
     unit float,
-    prixunit
+    prixunit float
 );
 create table regimealiment(
     idregimealiment int primary key auto_increment  ,
@@ -85,22 +85,25 @@ create table codemoney(
     idcodemoney int primary key auto_increment  ,
     code varchar(30),
     valeur float,
-    etat int --1:dispo --11:non dispo --21:plus dispo 
+    etat int
 );
+ --1:dispo --11:non dispo --21:plus dispo 
 create table ajoutmoney(
     idajoutmoney int primary key auto_increment  ,
     idusers int references users(idusers),
     montant float,
     dateajout date,
-    etat int --1:non valider 11:valider 
+    etat int 
 );
+--1:non valider 11:valider 
 create table retiremoney(
     idretiremoney int primary key auto_increment  ,
     idusers int references users(idusers),
     montant float,
     dateretire date,
-    etat int --1:non valider 11:valider 
+    etat int 
 );
+--1:non valider 11:valider 
 create table admins(
     idadmins int primary key auto_increment  ,
     nomadmins varchar(30),
