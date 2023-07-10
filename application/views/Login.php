@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css") ; ?> ">
-    <title>Document</title>
+    <title>KAMIAN</title>
 </head>
 <body>
-    <form action="NewTest_admin/Transform" method="get">
-        <input type="test" name="nom" placeholder="enter...">
-        <input type="password" name="mdp" placeholder="enter...">
-        <input type="submit" value="ok">
-    </form>
-    <?php
-        $list =  $this->Tobase_model->getNamees() ;
-        for ($i=0; $i <count($list) ; $i++) { 
-            echo $list[$i]["name_user"] ; 
-        }
-    ?>
+    <div class="div">
+        <span class="title_project">  <span class="ka">Ka</span> <span class="mi">Mi</span> <span class="an">An</span> </span>
+        <span class="sign">SIGN-IN</span>
+        <form action="" method="get">
+            <input type="email" name="email" placeholder="email">
+            <input type="password" name="mdp" placeholder="password">
+            <input type="submit" value="valider">
+        </form>
+        <span class="url">Create account ? <a href="<?php echo base_url("First/inscription") ; ?>">  Sign in </a></span>
+    </div>
 </body>
 </html>
