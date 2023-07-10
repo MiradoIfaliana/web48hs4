@@ -33,7 +33,7 @@ class First extends CI_Controller {
 		$password=$this->input->post('password');
 		$user=$this->Login->getUser($mail,$password);
 		if($user==null){
-			$data["message"] = "valeur";
+			$data["message"] = "Wrong identity";
 			$this->load->view('Login',$data);
 		}
 
