@@ -1,6 +1,6 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
-    class Login extends CI_Model {
+    class Regime_model extends CI_Model {
 
         public function getUser($poids=0,$taillecm=0){
            $repas_g=($poids*$taillecm)/30;
