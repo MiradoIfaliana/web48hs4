@@ -11,5 +11,15 @@
             }
             return $data;
         }
+
+        public function getUsers(){
+            $query = $this-> db ->query("SELECT * from user");
+            $admin=array();
+            $i=0;
+            foreach($query->result_array() as $admin[$i]){
+                $i++;
+            }
+            return $admin;
+        }
     }
 ?>
