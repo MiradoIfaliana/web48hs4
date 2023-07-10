@@ -49,16 +49,8 @@ create table regimealiment(
     quantitemidi float ,
     quantitesoir float  
 );
---parametre du regime pour le calcul
-create table regimealimentparam(
-    idregimealimentparam int primary key auto_increment  ,
-    idobjectif int references objectif(idobjectif),
-    idrepas int references repas(idrepas), 
-    quantiteparjour float,
-    objectifobtenu float
-);
 create table sport(
-    idsport int primary key auto_increment  ,
+    idsport int primary key auto_increment,
     nomsport varchar(20),
     descriptions text,
     agemin int,
@@ -73,14 +65,15 @@ create table regimesport(
     dureeminut float
 );
 --parametre du regime pour le calcul
-create table regimesportparam(
-    idregimesportparam int primary key auto_increment ,
+create table regimeparam(
+    idregimeparam int primary key auto_increment  ,
     idobjectif int references objectif(idobjectif),
+    idrepas int references repas(idrepas), 
+    quantiteparjour float,
     idsport int references sport(idsport),
     dureeparjour float,
     objectifobtenu float
 );
-
 create table codemoney(
     idcodemoney int primary key auto_increment  ,
     code varchar(30),
