@@ -19,7 +19,7 @@
         //     passwords varchar(55)
         // );
         public function getUser($mail='',$password=''){
-            $rqt = $this-> db ->query("SELECT * from user where mail='%s' and passwords='%s'");
+            $rqt = "SELECT * from users where mail='%s' and passwords='%s'";
             $rqt=sprintf($rqt,$mail,$password);
             $query = $this-> db ->query($rqt);
             $objet=null;
