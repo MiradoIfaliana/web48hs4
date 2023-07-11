@@ -1,0 +1,56 @@
+.contain-notif {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.contain-notif .notif {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  width: 900px;
+  background: rgb(249, 249, 249);
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 3px;
+}
+.contain-notif .notif .aa {
+  background: rgb(73, 255, 125);
+  padding: 9px;
+  display: flex;
+  align-items: center;
+}
+.contain-notif .notif .aa img {
+  width: 30px;
+  height: 30px;
+}
+.contain-notif .notif .mig {
+  display: flex;
+}
+.contain-notif .notif .mig a {
+  margin-left: 8px;
+}
+.contain-notif .notif .mig .check {
+  display: flex;
+  text-align: center;
+  background: greenyellow;
+  padding: 5px;
+  align-items: center;
+  border-radius: 30px;
+}
+.contain-notif .notif .mig .non-validate {
+  display: flex;
+  text-align: center;
+  background: rgb(255, 85, 47);
+  padding: 5px;
+  align-items: center;
+  border-radius: 30px;
+}
+.contain-notif .notif .mig img {
+  width: 13px;
+  height: 13px;
+}/*# sourceMappingURL=notif.css.map */

@@ -1,0 +1,220 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.boi {
+  padding: 8px;
+  background: rgba(100, 193, 255, 0.43);
+}
+
+.header {
+  padding: 5px;
+}
+.header .company {
+  display: flex;
+  font-size: 29px;
+  font-weight: bold;
+}
+.header .company .ka {
+  color: var(--vert);
+}
+.header .company .mi {
+  color: rgb(47, 255, 109);
+}
+.header .company .an {
+  color: orange;
+}
+.header header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header header .menu span {
+  margin-left: 30px;
+}
+.header header .menu span a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.header header .menu .users {
+  align-items: center;
+  padding: 5px;
+  border-radius: 30px;
+  background: rgba(18, 196, 107, 0.7843137255);
+  color: white;
+  border: 1px solid rgba(18, 196, 107, 0.7843137255);
+}
+.header header .menu .users img {
+  width: 20px;
+  height: 20px;
+}
+.header header .menu .users-no {
+  align-items: center;
+  padding: 5px;
+  border-radius: 30px;
+  background: rgba(204, 40, 146, 0.7843137255);
+  color: white;
+  border: 1px solid rgba(204, 40, 146, 0.7843137255);
+}
+.header header .menu .users-no img {
+  width: 20px;
+  height: 20px;
+}
+
+.back {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+.back .details {
+  display: flex;
+  flex-direction: column;
+}
+.back .details .bien {
+  font-size: 40px;
+}
+.back .details .det {
+  font-size: 13px;
+}
+.back .details .start {
+  display: flex;
+  width: 120px;
+  margin-left: 300px;
+  margin-top: 30px;
+  color: white;
+  justify-content: center;
+  padding: 7px;
+  border-radius: 20px;
+  background: var(--vert);
+}
+.back .img img {
+  width: 500px;
+  height: 500px;
+}
+
+.motivation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.motivation span {
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-left: 20px;
+  background: rgba(125, 255, 246, 0.223);
+  box-shadow: 1px 1px 4px rgba(122, 8, 8, 0.14);
+}
+.motivation span h3 {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 15px;
+  padding: 10px;
+}
+.footer footer {
+  text-align: center;
+}
+
+.choix_objectif {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.choix_objectif .mig img {
+  width: 550px;
+  height: 550px;
+}
+.choix_objectif .details-choix form {
+  display: flex;
+  flex-direction: column;
+}
+.choix_objectif .details-choix form h2 {
+  text-align: center;
+}
+.choix_objectif .details-choix form select {
+  font-family: "poppins";
+  border: none;
+  outline: none;
+  background: gainsboro;
+  width: 200px;
+  padding: 8px;
+}
+.choix_objectif .details-choix form input[type=text] {
+  margin-top: 8px;
+  outline: none;
+  padding: 8px;
+  width: 185px;
+  border: none;
+  font-family: "poppins";
+  background-color: rgb(206, 206, 206);
+}
+.choix_objectif .details-choix form input[type=submit] {
+  padding: 8px;
+  width: 200px;
+  margin-top: 10px;
+  border: none;
+  font-family: "poppins";
+  background-color: rgb(50, 231, 153);
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: column;
+}
+.suggestion img {
+  border-radius: 5px;
+  width: 300px;
+  height: 250px;
+}
+.suggestion .contains .jj {
+  background: rgb(50, 144, 50);
+  padding: 1px;
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+.suggestion .contains .vision {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.suggestion .contains .vision .description {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.suggestion .contains .vision .description .descri {
+  font-size: 14px;
+}
+.suggestion .contains .vision .description .qt {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.prix-total {
+  width: 200px;
+  background-color: rgb(247, 244, 244);
+  margin-bottom: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.prix-total span {
+  border-bottom: 1px solid black;
+  padding: 4px;
+}
+.prix-total form input {
+  margin-top: 20px;
+  font-family: "poppins";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background: rgb(76, 255, 76);
+  padding: 8px;
+  border: none;
+}/*# sourceMappingURL=sugg.css.map */

@@ -1,0 +1,81 @@
+:root {
+  --vert:rgb(236 47 9);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-Light.ttf");
+}
+body {
+  font-family: "poppins" !important;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-around;
+  width: 1200px;
+  align-items: center;
+}
+.content .div {
+  padding: 25px;
+  background: #fafafa;
+  box-shadow: 1px 1px 4px rgba(107, 104, 104, 0.4);
+  width: 250px;
+}
+.content .div .title_project {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.content .div .title_project .admin {
+  font-size: 13px;
+  font-weight: bold;
+}
+.content .div .title_project .ka {
+  margin-left: 10px;
+  color: var(--vert);
+}
+.content .div .title_project .mi {
+  color: rgb(47, 255, 109);
+}
+.content .div .title_project .an {
+  color: orange;
+}
+.content .div .sign {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-weight: bold;
+}
+.content .div form {
+  display: flex;
+  flex-direction: column;
+}
+.content .div form input {
+  outline: none;
+  border: none;
+  padding: 13px;
+  margin-top: 25px;
+}
+.content .div form input[type=email], .content .div form input[type=password] {
+  background-color: rgb(237, 237, 237);
+}
+.content .div form input[type=submit] {
+  margin-top: 18px;
+  font-size: 17px;
+  font-family: "poppins";
+  color: white;
+  border-radius: 30px;
+  background-color: rgb(13, 21, 255);
+}
+.content .div form .error {
+  margin-top: 12px;
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+}/*# sourceMappingURL=login_admin.css.map */

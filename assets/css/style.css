@@ -66,6 +66,12 @@ body {
   font-family: "poppins";
   font-size: 16px;
 }
+.div .error {
+  margin-top: 5px;
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+}
 .div .url {
   display: flex;
   justify-content: center;
@@ -75,4 +81,10 @@ body {
 .div .url a {
   color: var(--vert);
   text-decoration: none;
+}
+.div .add_min a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

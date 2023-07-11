@@ -12,24 +12,24 @@
         <div class="div">
             <span class="title_project">  <span class="ka">Ka</span> <span class="mi">Mi</span> <span class="an">An</span> </span>
             <span class="sign">SIGN-Up</span>
-            <form action="" method="get">
+            <form action="<?php echo base_url("First/addinscription") ; ?>" method="post">
                 <div>
-                    <input type="email" name="email" placeholder="email">
-                    <input type="name" name="mdp" placeholder="password">
+                    <input type="email" name="mail" placeholder="email">
+                    <input type="name" name="nom" placeholder="nom">
                 </div>
                 <div class="nee">
                     <label for="">Nee : </label>
-                    <input type="date" name="mdp" placeholder="password">
+                    <input type="date" name="nee" placeholder="password">
                 </div>
                 <div class="genre">
                     <label for="">Genre :</label>
-                    <select name="" id="">
-                        <option value="">Homme</option>
-                        <option value="">Femme</option>
+                    <select name="idgenre" id="">
+                        <option value="1">Homme</option>
+                        <option value="2">Femme</option>
                     </select>
                 </div>
                 <div>
-                    <input type="text" name="mdp" placeholder="taille en cm">
+                    <input type="text" name="taillecm" placeholder="taille en cm">
                     <input type="texx" name="poids" placeholder="poids">
                 </div>
                 <div class="pass">
@@ -40,6 +40,9 @@
                 </div>
             </form>
             <span class="url"> Already have an account <a href="<?php echo base_url("First/index") ; ?>" >Sign in ?</a></span>
+            <?php if(isset($message)){ ?>
+                <span><?php echo $message ;?></span>
+            <?php } ?>
         </div>
         <div class="img">
             <img src="<?php echo base_url("assets/image/4968860.jpg") ; ?>" alt="" width=600px" height="590px">

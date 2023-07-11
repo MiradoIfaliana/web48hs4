@@ -1,0 +1,159 @@
+:root {
+  --vert:rgb(236 47 9);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-Light.ttf");
+}
+body {
+  font-family: "poppins" !important;
+}
+
+.header {
+  padding: 5px;
+}
+.header .company {
+  display: flex;
+  font-size: 19px;
+  font-weight: bold;
+}
+.header .company .ka {
+  color: var(--vert);
+}
+.header .company .mi {
+  color: rgb(47, 255, 109);
+}
+.header .company .an {
+  color: orange;
+}
+.header header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header header .menu span {
+  margin-left: 30px;
+}
+.header header .menu span a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.header header .menu .users {
+  align-items: center;
+  padding: 5px;
+  border-radius: 30px;
+  background: rgba(18, 196, 107, 0.7843137255);
+  color: white;
+  border: 1px solid rgba(18, 196, 107, 0.7843137255);
+}
+.header header .menu .users img {
+  width: 20px;
+  height: 20px;
+}
+.header header .menu .users-no {
+  align-items: center;
+  padding: 5px;
+  border-radius: 30px;
+  background: rgba(204, 40, 146, 0.7843137255);
+  color: white;
+  border: 1px solid rgba(204, 40, 146, 0.7843137255);
+}
+.header header .menu .users-no img {
+  width: 20px;
+  height: 20px;
+}
+
+.stat .data {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.stat .data .report {
+  width: 330px;
+}
+.stat .data .detail .first-detail {
+  display: flex;
+  flex-direction: column;
+}
+.stat .data .detail .first-detail .gain {
+  padding: 2px;
+  width: 15px;
+  height: 2px;
+  background: greenyellow;
+}
+.stat .data .detail .first-detail .perte {
+  padding: 2px;
+  width: 15px;
+  height: 2px;
+  background: pink;
+}
+.stat .data .detail .first-detail .emeute {
+  margin-left: 20px;
+  margin-top: 12px;
+}
+.stat .data .search {
+  margin-top: 40px;
+}
+.stat .data .search form {
+  display: flex;
+  flex-direction: column;
+}
+.stat .data .search form label {
+  font-size: 13px;
+}
+.stat .data .search form input {
+  padding: 10px;
+  border: none;
+}
+.stat .data .search form input[type=month] {
+  background: rgb(233, 233, 233);
+  outline: none;
+  width: 180px;
+}
+.stat .data .search form input[type=submit] {
+  width: 200px;
+  margin-top: 10px;
+  font-family: "poppins";
+  color: white;
+  font-size: 13px;
+  background: rgba(15, 101, 89, 0.765);
+}
+
+.statistique .contain {
+  display: flex;
+  justify-content: center;
+}
+.statistique .contain .st {
+  display: flex;
+  flex-direction: column;
+}
+.statistique .contain .st form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.statistique .contain .st form input {
+  border: none;
+  outline: none;
+}
+.statistique .contain .st form input[type=date] {
+  width: 190px;
+  outline: none;
+  background-color: rgba(225, 222, 222, 0.7843137255);
+  padding: 10px;
+}
+.statistique .contain .st form input[type=submit] {
+  margin-top: 5px;
+  width: 210px;
+  outline: none;
+  font-family: "poppins";
+  color: white;
+  background-color: rgba(18, 196, 107, 0.7843137255);
+  padding: 10px;
+}
+.statistique .contain .canva {
+  width: 1000px;
+}/*# sourceMappingURL=acceuil_ad.css.map */

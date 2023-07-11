@@ -5,7 +5,6 @@ create table genre(
     genre varchar(55),
     codegenre int
 );
-
 create table users(
     idusers int primary key auto_increment  ,
     nom varchar(55),
@@ -21,7 +20,27 @@ create table objectif(
     idobjectif int primary key auto_increment  ,
     objectif varchar(55)
 );
+--petitdejeuner,dejeuner,diner
+create table categorierepas(
+    idcategorierepas int primary key auto_increment  ,
+    categorie varchar(20)
+);
 
+create table repas(
+    idrepas int primary key auto_increment  ,
+    nomrepas varchar(55),
+    descriptions text,
+    unit float,
+    prixunit float,
+    photos varchar(30),
+    idcategorierepas int references categorierepas(idcategorierepas)
+);
+
+create table repasimage(
+    idrepasimage int primary key auto_increment ,
+    idrepas int references repas(idrepas), 
+    photo varchar(30)
+);
 create table regime (
     idregime int primary key auto_increment  ,
     idusers int references users(idusers),
@@ -31,13 +50,6 @@ create table regime (
     prixregime float
 );
 
-create table repas(
-    idrepas int primary key auto_increment  ,
-    nomrepas varchar(55),
-    descriptions text,
-    unit float,
-    prixunit float
-);
 create table regimealiment(
     idregimealiment int primary key auto_increment  ,
     idregime int references regime(idregime),
@@ -53,6 +65,7 @@ create table sport(
     idsport int primary key auto_increment,
     nomsport varchar(20),
     descriptions text,
+    photos varchar(30),
     agemin int,
     agemax int
 );
@@ -66,9 +79,11 @@ create table regimesport(
 );
 --parametre du regime pour le calcul
 create table regimeparam(
-    idregimeparam int primary key auto_increment  ,
+    idregimeparam int primary key auto_increment ,
     idobjectif int references objectif(idobjectif),
-    idrepas int references repas(idrepas), 
+    idrepasmatin int references repas(idrepas),
+    idrepasmidi int references repas(idrepas),
+    idrepassoir int references repas(idrepas),
     quantiteparjour float,
     idsport int references sport(idsport),
     dureeparjour float,
@@ -84,6 +99,7 @@ create table codemoney(
 create table ajoutmoney(
     idajoutmoney int primary key auto_increment  ,
     idusers int references users(idusers),
+    idcodemoney int references codemoney(idcodemoney),
     montant float,
     dateajout date,
     etat int 
